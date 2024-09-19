@@ -53,6 +53,7 @@
     text-decoration: none;
     color: #333;
     transition: color .3s ease;
+    position: relative;
 }
 .header_link::after{
     content: '';
