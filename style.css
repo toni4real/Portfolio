@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_contents{
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 15px;
+    z-index: 1000;
+}
+.header_logo-img-cont{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: color .3s ease;
+    margin-left: 50px;
+}
+.header_logo-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    margin-left: 25px;
+}
+.header_name:hover{
+    cursor: pointer;
+    color: #ff3131;
+    transition: color .3s ease;
+}
+.header_navigation{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.header_links{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    width: 100%;
+}
+.header_link{
+    text-decoration: none;
+    color: #333;
+    transition: color .3s ease;
+}
+.header_link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ff3131; 
+    transition: .3s ease;
+}
+.header_link:hover::after{
+    width: 100%;
+}
+.header_link:hover{
+    color: #ff3131;
+    transform: translateY(-2.5px);
+}
+.home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#cdffd8, #94b9ff);
+    padding-top: 90px;
+}
+.my_socials{
+    height: 22.5rem;
+    width: 5.2rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+.social{
+    width: 4rem;
+}
+.social-icon-link{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    transition: .3s ease;
+    border-radius: 50px;
+}
+.social-icon-link:hover{
+    background-color: #FFC4C4;
+}
+.social-icon{
+    width: 100%;
+}
+.home_heading{
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.home_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.home_projects-btn{
+    width: 0;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer
+}
+.btn{
+    background: #ff3131;
+    color: #fff;
+    display:flex;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    transition: .3s ease;
+    text-decoration: none;
+    
+}
+.btn:hover{
+    transform: translateY(-2.5px) scale(1.05);
+    background: #e60000;
+}
+.btn-projects{
+    padding: 10px 60px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px
+}
+.about{    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#cdffd8, #94b9ff);
+    padding-top: 90px;
+}
+.projects{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#cdffd8, #94b9ff);
+    padding-top: 90px;
+}
+.resume{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#cdffd8, #94b9ff);
+    padding-top: 90px;
+}
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#cdffd8, #94b9ff);
+    padding-top: 90px;
+}
+.footer_contents{
+    height: 250px;
+    width: 100%;
+    background-color: #ff3131;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
