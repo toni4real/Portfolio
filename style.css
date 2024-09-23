@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 50px;
 }
 .header_contents{
     height: 90px;
@@ -18,12 +19,10 @@
 .header_logo-img-cont{
     width: auto;
     display: flex;
-    justify-content: center;
     cursor: pointer;
-    transition: color .3s ease;
     margin-left: 50px;
 }
-.header_logo-sub{
+.header_logo-name{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,49 +36,45 @@
 }
 .header_navigation{
     width: 40%;
-    display: flex;
-    justify-content: flex-end;
     margin-left: auto;
 }
 .header_links{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: large;
-    width: 100%;
 }
 .header_link{
     text-decoration: none;
-    color: #333;
-    transition: color .3s ease;
+    color: black;
     position: relative;
+    padding: 27px;
 }
 .header_link::after{
     content: '';
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 0;
-    height: 2px;
+    height: 5px;
     background-color: #ff3131; 
-    transition: .3s ease;
+}
+.header_link:hover{
+    color: #ff3131;
+    transition: color .3s ease;
 }
 .header_link:hover::after{
     width: 100%;
 }
-.header_link:hover{
-    color: #ff3131;
-    transform: translateY(-2.5px);
-}
-.home{
+.home_section{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(#cdffd8, #94b9ff);
+    background-attachment: fixed;
     padding-top: 90px;
 }
 .my_socials{
@@ -89,8 +84,6 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
     border-radius: 50px;
     padding: 10px;
     margin-top: 50px;
@@ -100,17 +93,17 @@
 .social{
     width: 4rem;
 }
-.social-icon-link{
+.social_icon-link{
     width: 100%;
     display: block;
     padding: 15px;
-    transition: .3s ease;
-    border-radius: 50px;
+    border-radius: 50%;
 }
-.social-icon-link:hover{
+.social_icon-link:hover{
     background-color: #FFC4C4;
+    transition: .3s ease;
 }
-.social-icon{
+.social_icon{
     width: 100%;
 }
 .home_heading{
@@ -118,8 +111,8 @@
     justify-content: center;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 60px;
+    margin-bottom: 25px;
 }
 .home_text{
     display: flex;
@@ -128,8 +121,8 @@
     align-items: center;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 25px;
-    margin-bottom: 40px;
+    font-size: 30px;
+    margin-bottom: 50px;
 }
 .home_projects-btn{
     width: 0;
@@ -140,8 +133,7 @@
 }
 .btn{
     background: #ff3131;
-    color: #fff;
-    display:flex;
+    color: white;
     border-radius: 50px;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
     transition: .3s ease;
@@ -157,7 +149,7 @@
     font-weight: 400;
     font-size: 20px
 }
-.about{
+.about_section{
     height: 120vh;
     display: flex;
     flex-direction: column;
@@ -177,17 +169,22 @@
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .about_heading::after{
     content: '';
     display: block;
-    width: 15%;
+    width: 7.5%;
     height: 5px;
+    border-radius: 50px;
     background-color: #ff3131;
-    margin-top: 4%;
+    margin-top: 20px;
 }
 .about_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -240,7 +237,7 @@
     gap: 10px;
 }
 .skills_skill{
-    background-color: white;
+    background-color: #F0FFFF;
     color: black;
     padding: 10px 20px;
     border-radius: 50px;
@@ -255,7 +252,7 @@
     font-weight: 400;
     font-size: 20px
 }
-.projects{
+.projects_section{
     height: 120vh;
     display: flex;
     flex-direction: column;
@@ -263,7 +260,49 @@
     align-items: center;
     background: linear-gradient(#cdffd8, #94b9ff);
 }
-.resume{
+.projects_intro{
+    margin-bottom: 25px;
+}
+.projects_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.projects_heading::after{
+    content: '';
+    display: block;
+    width: 7.5%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #ff3131;
+    margin-top: 20px;
+}
+.projects_text{
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.projects_content{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: flex-start;
+}
+.projects_left-column{
+    width: 60%;
+    padding-right: 50px;
+}
+.projects_right-column{
+    width: 35%;
+}
+.resume_section{
     height: 120vh;
     display: flex;
     flex-direction: column;
@@ -271,7 +310,7 @@
     align-items: center;
     background: linear-gradient(#cdffd8, #94b9ff);
 }
-.contact{
+.contact_section{
     height: 120vh;
     display: flex;
     flex-direction: column;
@@ -288,3 +327,4 @@
     align-items: center;
     padding: 15px;
 }
+

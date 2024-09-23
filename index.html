@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap">
 </head>
 <body>
 
-    <div class="header_contents">
+    <header class="header_contents">
 
         <div class="header_logo-img-cont">
-            <img src="https://lalweb.blob.core.windows.net/public/lakers/product-marketing/web/player-page/2023-2024/2324_PlayerImage_James_1920x2304.jpg" alt="lebron" width="50" height="50">
+            <img src="https://lalweb.blob.core.windows.net/public/lakers/product-marketing/web/player-page/2023-2024/2324_PlayerImage_James_1920x2304.jpg" alt="lebron" width="55" height="55">
         </div>
 
-        <div class="header_logo-sub">
+        <div class="header_logo-name">
             <span class="header_name" style="font-size: 25px; font-weight: 700;">JESTONI TOLENTINO</span>
-            <span class="header_job-title" style="color: #ff3131; font-weight: 400;">Frontend Developer</span>
+            <span class="header_job-title" style="color: #ff3131; font-size:20px; font-weight: 400;">Frontend Developer</span>
         </div>
 
         <div class="header_navigation">
@@ -26,38 +26,37 @@
                 <a href="./" class="header_link">HOME</a>
               </li>
               <li class="header_link-wrapper">
-                <a href="./#about" class="header_link">ABOUT</a>
+                <a href="#about" class="header_link">ABOUT</a>
               </li>
               <li class="header_link-wrapper">
-                <a href="./#projects" class="header_link">PROJECTS</a>
+                <a href="#projects" class="header_link">PROJECTS</a>
               </li>
               <li class="header_link-wrapper">
-                <a href="./#resume" class="header_link">RESUME</a>
+                <a href="#resume" class="header_link">RESUME</a>
               </li>
               <li class="header_link-wrapper">
-                <a href="./#contact" class="header_link">CONTACT</a>
+                <a href="#contact" class="header_link">CONTACT</a>
               </li>
             </ul>
         </div>
        
-    </div>
+    </header>
 
-
-    <section class="home">
+    <section class="home_section">
 
     <div class="my_socials">
 
       <div class="social">
         <a
           href="https://github.com/toni4real"
-          class="social-icon-link"
+          class="social_icon-link"
           rel="noreferrer"
           target="_blank"
         >
           <img
             src="images\github.png"
             alt="toni4real Github Profile"
-            class="social-icon"
+            class="social_icon"
           />
         </a>
       </div>
@@ -65,14 +64,14 @@
         <div class="social">
           <a
             href="https://twitter.com"
-            class="social-icon-link"
+            class="social_icon-link"
             rel="noreferrer"
             target="_blank"
           >
             <img
               src="images\twitter.png"
               alt="Jestoni Tolentino Twitter Profile"
-              class="social-icon"
+              class="social_icon"
             />
           </a>
         </div>
@@ -80,14 +79,14 @@
         <div class="social">
           <a
             href="https://www.facebook.com/toni.tolentino.908?mibextid=ZbWKwL"
-            class="social-icon-link"
+            class="social_icon-link"
             rel="noreferrer"
             target="_blank"
           >
             <img
               src="images\facebook.png"
               alt="Jestoni Tolentino Facebook Profile"
-              class="social-icon"
+              class="social_icon"
             />
           </a>
         </div>
@@ -95,14 +94,14 @@
         <div class="social">
           <a
             href="https://instagram.com"
-            class="social-icon-link"
+            class="social_icon-link"
             rel="noreferrer"
             target="_blank"
           >
             <img
               src="images\instagram.png"
               alt="Jestoni Tolentino Instagram Profile"
-              class="social-icon"
+              class="social_icon"
             />
           </a>
         </div>
@@ -110,14 +109,14 @@
         <div class="social">
           <a
             href="https://linkedin.com"
-            class="social-icon-link"
+            class="social_icon-link"
             rel="noreferrer"
             target="_blank"
           >
             <img
               src="images\linkedin.png"
               alt="Jestoni Tolentino Linkedin Profile"
-              class="social-icon"
+              class="social_icon"
             />
           </a>
         </div>
@@ -125,7 +124,7 @@
       </div>
 
       <div class="home_content">
-        <span class="home_heading">HI THERE! I’M JESTONI TOLENTINO</span>
+        <span class="home_heading">HI THERE! I'M JESTONI TOLENTINO</span>
         <div class="home_info">
           <p class="home_text">
             Developing and overseeing websites and web applications with a focus on results that contribute
@@ -134,18 +133,17 @@
           </p>
         </div>
         <div class="home_projects-btn">
-          <a href="./#projects" class="btn btn-projects">PROJECTS</a>
+          <a href="#projects" class="btn btn-projects" title="Go to PROJECTS section">PROJECTS</a>
         </div>
-     </div>
+      </div>
 
     </div>
 
     </section>
 
-    <section class="about">
+    <section class="about_section" id="about">
 
       <div class="about_intro">
-        
         <span class="about_heading">ABOUT ME</span>
         <div class="about_info">
           <p class="about_text">
@@ -171,10 +169,9 @@
             </p>
           </div>
           <div class="about_contact-btn">
-            <a href="./#contact" class="btn btn_contact">CONTACT</a>
+            <a href="#contact" class="btn btn_contact" title="Go to CONTACT section">CONTACT</a>
           </div>
         </div>
-    
         <div class="about_right-column">
           <h3 class="about_content-title-skills">My Skills</h3>
           <div class="skills">
@@ -182,10 +179,17 @@
             <div class="skills_skill">CSS</div>
             <div class="skills_skill">JavaScript</div>
             <div class="skills_skill">Java</div>
-            <div class="skills_skill">React</div>
-            <div class="skills_skill">PHP</div>
+            <div class="skills_skill">C</div>
+            <div class="skills_skill">C++</div>
+            <div class="skills_skill">MySQL</div>
+            <div class="skills_skill">PostgreSQL</div>
+            <div class="skills_skill">MongoDB</div>
             <div class="skills_skill">GIT</div>
             <div class="skills_skill">Github</div>
+            <div class="skills_skill">MS Word</div>
+            <div class="skills_skill">MS Excel</div>
+            <div class="skills_skill">MS PowerPoint</div>
+            <div class="skills_skill">MS Access</div>
           </div>
         </div>
 
@@ -194,21 +198,44 @@
     </section>
     
   
-    <section class="projects">
-      
-    </section>
-  
-    <section class="resume">
-      
-    </section>
-  
-    <section class="contact">
-      
-    </section>
-    
-    <div class="footer_contents">
+    <section class="projects_section" id="projects">
+
+      <div class="projects_intro">
+        <span class="projects_heading">PROJECTS</span>
+        <div class="projects_info">
+          <p class="projects_text">
+            Here are a few of the projects I've worked on for myself as a student; each has a case study attached. 
+          </p>
+        </div>
+      </div>
+
+      <div class="projects_content">
+        
+        <div class="projects_left-column">
+
+        </div>
+
+        <div class="projects_right-column">
+
+        </div>
+
+      </div>
 
     </div>
+
+    </section>
+  
+    <section class="resume_section" id="resume">
+      
+    </section>
+  
+    <section class="contact_section" id="contact">
+      
+    </section>
     
+    <footer class="footer_contents">
+
+    </footer>
+
 </body>
 </html>
