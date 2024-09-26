@@ -74,7 +74,6 @@
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(#cdffd8, #94b9ff);
-    background-attachment: fixed;
     padding-top: 90px;
 }
 .my_socials{
@@ -156,7 +155,6 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(#cdffd8, #94b9ff);
-    background-attachment: fixed;
 }
 .about_intro{
     margin-bottom: 25px;
@@ -195,7 +193,6 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    align-items: flex-start;
 }
 .about_left-column{
     width: 60%;
