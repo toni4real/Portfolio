@@ -101,7 +101,7 @@
     border-radius: 50%;
 }
 .social_icon-link:hover{
-    background-color: #ff3131;
+    background-color: #ff8989;
     transition: .3s ease;
 }
 .social_icon{
@@ -239,7 +239,7 @@
     color: black;
     padding: 10px 20px;
     border-radius: 50px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Afacad Flux", sans-serif;
     font-size: 20px;
     margin-bottom: 10px;
 }
