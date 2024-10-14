@@ -60,13 +60,11 @@
     letter-spacing: 1px;
     color: black;
     padding: 27px 33px 27px 33px;
+    position: relative;
 }
 .header_link:hover{
     color: #ff3131;
     transition: color .3s ease;
-}
-.header_link:hover::after{
-    width: 100%;
 }
 .home_section{
     height: 100vh;
@@ -74,9 +72,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(#cdffd8, #94b9ff);
+    background-image: url(images/white-background-with-wavy-line.jpg);
+    background-size: cover;
     padding-top: 90px;
-    background-attachment: fixed;
 }
 .my_socials{
     height: 22.5rem;
@@ -88,8 +86,8 @@
     border-radius: 50px;
     padding: 10px;
     margin-top: 50px;
-    background-color: white;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    background-color: #ffffff;
+    box-shadow: #727272 7px 7px 7px 0px;
 }
 .social{
     width: 4rem;
@@ -101,7 +99,7 @@
     border-radius: 50%;
 }
 .social_icon-link:hover{
-    background-color: #ff8989;
+    background-color: #ff3131;
     transition: .3s ease;
 }
 .social_icon{
@@ -162,8 +160,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#cdffd8, #94b9ff);
-    background-attachment: fixed;
+    background-color: rgb(238, 238, 238);
 }
 .about_intro{
     margin-bottom: 25px;
@@ -235,7 +232,7 @@
     gap: 10px;
 }
 .skills_skill{
-    background-color: #F0FFFF;
+    background-color: #cfcfcf;
     color: black;
     padding: 10px 20px;
     border-radius: 50px;
@@ -256,7 +253,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#cdffd8, #94b9ff);
+    background-color: #f4f4f4;
 }
 .projects_intro{
     margin-bottom: 25px;
@@ -306,7 +303,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#cdffd8, #94b9ff);
+    background-image: url(images/resume.jpg);
+    background-size: cover;
 }
 .contact_section{
     height: 120vh;
@@ -314,12 +312,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#cdffd8, #94b9ff);
+    background-image: url(images/geometric-pattern.jpg);
+    background-size: cover;
 }
 .footer_contents{
-    height: 250px;
+    height: 50vh;
     width: 100%;
-    background-color: #ff3131;
+    background-color: #363636;
     display: flex;
     justify-content: space-between;
     align-items: center;
